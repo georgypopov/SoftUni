@@ -1,0 +1,44 @@
+using System;
+
+namespace AddBags
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double bagP = double.Parse(Console.ReadLine());
+            double kg = double.Parse(Console.ReadLine());
+            double days = double.Parse(Console.ReadLine());
+            double number = double.Parse(Console.ReadLine());
+            double tax = 0;
+            double price = 0;
+            double l = 0;
+                if(kg<=10 )
+                {
+                l = bagP * 0.2;
+                }
+                else if( kg<=20)
+                {
+                    l=bagP * 0.5;
+                }
+                else if(kg>20)
+                {
+                l = bagP;  
+                }
+                 if (days<7)
+                {
+                tax = l * 1.4;
+                }
+                 else if(days >=7 && days<=30)
+                {
+                tax = l * 1.15;
+                }
+                 else if (days>30)
+                {
+                tax = l * 1.1;
+                }
+            price = tax * number;
+            Console.WriteLine($"The total price of bags is: {price:F2} lv. ");
+        }
+    }
+}
