@@ -1,0 +1,26 @@
+using System;
+
+namespace AgencyProfit
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            string name = Console.ReadLine();
+            int adultTicket = int.Parse(Console.ReadLine());
+            int kidTicket = int.Parse(Console.ReadLine());
+            double netPrice = double.Parse(Console.ReadLine());
+            double servicePrice = double.Parse(Console.ReadLine());
+            double kid = 0;
+            double adult = 0;
+            double total = 0;
+            double r = 0;
+             kid = (netPrice- 0.7*netPrice) + servicePrice;
+              adult = netPrice + servicePrice;
+             total = (kidTicket * kid) + (adultTicket * adult);
+              r=total*0.2;
+            Console.WriteLine($"The profit of your agency from {name} tickets is {r:F2} lv.");
+        }
+    }
+}
