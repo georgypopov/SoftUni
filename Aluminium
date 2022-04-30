@@ -1,0 +1,80 @@
+using System;
+
+namespace Aluminium
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int al = int.Parse(Console.ReadLine());
+            string kind = Console.ReadLine();
+            string del = Console.ReadLine();
+            double price = 0.0;
+            if (al <= 10)
+            {
+                Console.WriteLine("Invalid order");
+            }
+            else if (kind == "90X130" || kind == "100X150" || kind == "130X180" || kind == "200X300")
+            {
+                if (kind == "90X130")
+                {
+                    price = 110;
+                    if (al > 30 && al <= 60)
+                    {
+                        price *= 0.95;
+                    }
+                    else if (al > 60)
+                    {
+                        price *= 0.92;
+                    }
+                }
+                else if (kind == "100X150")
+                {
+                    price = 140;
+                    if (al > 40 && al <= 80)
+                    {
+                        price *= 0.94;
+                    }
+                    else if (al > 80)
+                    {
+                        price *= 0.9;
+                    }
+                }
+                else if (kind == "130X180")
+                {
+                    price = 190;
+                    if (al > 20 && al <= 50)
+                    {
+                        price *= 0.93;
+                    }
+                    else if (al > 50)
+                    {
+                        price *= 0.88;
+                    }
+                }
+                else if (kind == "200X300")
+                {
+                    price = 250;
+                    if (al > 25 && al <= 50)
+                    {
+                        price *= 0.91;
+                    }
+                    else if (al > 50)
+                    {
+                        price *= 0.86;
+                    }
+                }
+                price *= al;
+                if (del == "With delivery")
+                {
+                    price += 60;
+                }
+                if (al > 99)
+                {
+                    price *= 0.96;
+                }
+                Console.WriteLine($"{price:F2} BGN");
+            }
+        }
+    }
+}
