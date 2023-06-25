@@ -1,0 +1,159 @@
+using System;
+
+namespace Vacation1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+                int n = int.Parse(Console.ReadLine());
+                string typeOfGroupe = Console.ReadLine();
+                string dayOfWeek = Console.ReadLine();
+                double total = 0.0;
+                if (dayOfWeek == "Friday")
+                {
+                    if (typeOfGroupe == "Students")
+                    {
+                        if (n >= 30)
+                        {
+                            total = 8.45 * 0.85 * n;
+                            Console.WriteLine($"Total price: {total:F2}");
+                            return;
+                        }
+                        else
+                        {
+                            total = 8.45 * n;
+                            Console.WriteLine($"Total price: {total:F2}");
+                            return;
+                        }
+                    }
+                    if (typeOfGroupe == "Business")
+                    {
+                        if (n >= 100)
+                        {
+                            n -= 10;
+                            total = n * 10.90;
+                            Console.WriteLine($"Total price: {total:F2}");
+                            return;
+                        }
+                        else
+                        {
+                            total = 10.90 * n;
+                            Console.WriteLine($"Total price: {total:F2}");
+                            return;
+                        }
+                    }
+                    if (typeOfGroupe == "Regular")
+                    {
+                        if (n >= 10 && n <= 20)
+                        {
+                            total = n * 0.95 * 15;
+                            Console.WriteLine($"Total price: {total:F2}");
+                            return;
+                        }
+                    else
+                    {
+                        total = n * 15;
+                        Console.WriteLine($"Total price: {total:F2}");
+                    }
+                }
+                }
+                if (dayOfWeek == "Saturday")
+                {
+                    if (typeOfGroupe == "Students")
+                    {
+                        if (n >= 30)
+                        {
+                            total = 9.80 * 0.85 * n;
+                            Console.WriteLine($"Total price: {total:F2}");
+                            return;
+                        }
+                        else
+                        {
+                            total = 9.80 * n;
+                            Console.WriteLine($"Total price: {total:F2}");
+                            return;
+                        }
+                    }
+                    if (typeOfGroupe == "Business")
+                    {
+                        if (n >= 100)
+                        {
+                            n -= 10;
+                            total = n * 15.60;
+                            Console.WriteLine($"Total price: {total:F2}");
+                            return;
+                        }
+                        else
+                        {
+                            total = 15.60 * n;
+                            Console.WriteLine($"Total price: {total:F2}");
+                            return;
+                        }
+                    }
+                    if (typeOfGroupe == "Regular")
+                    {
+                        if (n >= 10 && n <= 20)
+                        {
+                            total = n * 0.95 * 20;
+                            Console.WriteLine($"Total price: {total:F2}");
+                            return;
+                        }
+                        else
+                    {
+                        total = n * 20;
+                        Console.WriteLine($"Total price: {total:F2}");
+                    }
+                    }
+                }
+                if (dayOfWeek == "Sunday")
+                {
+                    if (typeOfGroupe == "Students")
+                    {
+                        if (n >= 30)
+                        {
+                            total = 10.46 * 0.85 * n;
+                            Console.WriteLine($"Total price: {total:F2}");
+                            return;
+                        }
+                        else
+                        {
+                            total = 10.46 * n;
+                            Console.WriteLine($"Total price: {total:F2}");
+                            return;
+                        }
+                    }
+                    if (typeOfGroupe == "Business")
+                    {
+                        if (n >= 100)
+                        {
+                            n -= 10;
+                            total = n * 16.00;
+                            Console.WriteLine($"Total price: {total:F2}");
+                            return;
+                        }
+                        else
+                        {
+                            total = 16.00 * n;
+                            Console.WriteLine($"Total price: {total:F2}");
+                            return;
+                        }
+                    }
+                    if (typeOfGroupe == "Regular")
+                    {
+                        if (n >= 10 && n <= 20)
+                        {
+                            total = n * 0.95 * 22.50;
+                            Console.WriteLine($"Total price: {total:F2}");
+                            return;
+                        }
+                    else
+                    {
+                        total = n * 22.50;
+                        Console.WriteLine($"Total price: {total:F2}");
+                    }
+                }
+                }
+            }
+        }
+    }
