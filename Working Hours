@@ -1,0 +1,36 @@
+using System;
+
+namespace WorkingHours
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double n = double.Parse(Console.ReadLine());
+            string d = Console.ReadLine();
+            if (n >= 10 && n <= 18)
+            {
+
+                switch (d)
+                {
+                    case "Monday":
+                    case "Tuesday":
+                    case "Wednesday":
+                    case "Thursday":
+                    case "Friday":
+                    case "Saturday":
+                        Console.WriteLine("open");
+                        break;
+
+                    case "Sunday":
+                        Console.WriteLine("closed");
+                        break;
+                }
+            }
+            else
+            {
+                Console.WriteLine("closed");
+            }
+        }
+    }
+}
