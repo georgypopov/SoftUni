@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S8</id>
+	<name>Task Searching</name>
+	<description>Users can search for specific tasks by using the &quot;Search&quot; option, which is accessible from the side menu on all pages of the application, as well as from the quick access buttons on the Home Page. They need to provide a keyword, and the application will display all tasks whose title or description matches the keyword</description>
+	<sections>
+		<section>
+		<name>Test Cases</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C28</id>
+				<title>The Search   button is displayed in the Side menu</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references>TAS-22</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Open the app</steps>
+										<expected>Verify the Search button in Side menu is displayed.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C29</id>
+				<title>The Search Task button in quick access buttons is displayed</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Open the app</steps>
+										<expected>Verify the Search Task button in quick access buttons is displayed.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C30</id>
+				<title>The Search Task button is active</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Open the app
+Click on the Search Task button</steps>
+										<expected>Verify the Search Task button is displayed. Click this button and Search Task page should be opened.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C31</id>
+				<title>Make search with key words</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references>TAS-22</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Open the app
+Click the Search Task button.
+Fill-in the fiels Keywords
+Click the Search button</steps>
+										<expected>Verify the Home page is opened and Search task button is active. Ckick it on and Search task page should be opened. Fill-in the key word and click on the Search button below.The application will display all tasks whose title or description matches the keyword.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>

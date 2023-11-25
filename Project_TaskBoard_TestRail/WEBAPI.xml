@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S9</id>
+	<name>Web API</name>
+	<description>Users can access the Web API by clicking on the &quot;Web API&quot; option from the Quick Access Buttons. The Web API provides a set of endpoints for performing CRUD (Create, Read, Update, Delete) operations on tasks. It allows users to interact with the application programmatically.</description>
+	<sections>
+		<section>
+		<name>Test Cases</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C32</id>
+				<title>Web API button is displayed</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references>TAS-28</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Open the app
+
+</steps>
+										<expected>Verify the Home page of the app is opened. The WEB API button is displayed in quick access buttons.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C33</id>
+				<title>WEB API button is active</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references>TAS-28</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Open the app
+Click on the WEB API button
+
+</steps>
+										<expected>Verify the Home page is opened. Try the click on the WEB API button and open the following page.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>

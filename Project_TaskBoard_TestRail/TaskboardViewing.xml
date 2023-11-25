@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S7</id>
+	<name>Task Viewing</name>
+	<description>Users can view all tasks in the system organized by boards by selecting the &quot;Task Board&quot; option. Each task will display its title, a brief description, and action options. Users can also view the complete details of a task by clicking the &quot;View&quot; button associated with each task.</description>
+	<sections>
+		<section>
+		<name>Test Cases</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C26</id>
+				<title>The View button is displayed</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references>TAS-16</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>
+</preconds>
+										<steps>Open the app.
+Click on New Task quick access button.
+Fill-in the information in the fields
+Push the Create button
+Push the View button from Done, In Progress and Open board</steps>
+										<expected>Verify the Create Task page is opened. Fill-in the given information and push Create button. The Task Board page is opened and different boards Done, In Progress and Open are displayed.View button should be displayed too.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C27</id>
+				<title>The View button is active</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references>TAS-16</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Open the app.
+Click on New Task quick access button.
+Fill-in the information in the fields
+Push the Create button
+Push the View button from Done, In Progress and Open board
+</steps>
+										<expected>Verify the Create Task page is opened. Fill-in the given information and push Create button. The Task Board page is opened and different boards Done, In Progress and Open are displayed.View button should be displayed too. Click the View button from choosen board and  you can also view the completed details of a task.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>

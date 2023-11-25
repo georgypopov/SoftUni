@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S6</id>
+	<name>Task Editing</name>
+	<description>For each task, there is an &quot;Edit&quot; option. Users can edit the title, description, or move the task to a different board. After editing, the user must click the &quot;Edit&quot; button to save the changes.</description>
+	<sections>
+		<section>
+		<name>Test Cases</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C23</id>
+				<title>Edit button is displaed</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references>TAS-19</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Open the app.
+Click on New Task quick access button.
+Fill-in the information in the fields
+Push the Create button
+Push the Edit button from Done, In Progress and Open board
+</steps>
+										<expected>Verify the Create Task page is opened. Fill-in the given information and push Create button. The Task Board page is opened and different boards Done, In Progress and Open are displayed.Edit button should be displayed too.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C24</id>
+				<title>Edit button is active</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references>TAS-19</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Open the app.
+Click on New Task quick access button.
+Fill-in the information in the fields
+Push the Create button
+Push the Edit button from Done, In Progress and Open board
+</steps>
+										<expected>Verify the Create Task page is opened. Fill-in the given information and push Create button. The Task Board page is opened and different boards Done, In Progress and Open are displayed.Edit button should be displayed too. Check the activity of the Edit button.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C25</id>
+				<title>Edit button is working properly</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references>TAS-19</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Open the app.
+Click on New Task quick access button.
+Fill-in the information in the fields
+Push the Create button
+Push the Edit button from Done, In Progress and Open board
+</steps>
+										<expected>Verify the Create Task page is opened. Fill-in the given information and push Create button. The Task Board page is opened and different boards Done, In Progress and Open are displayed.Edit button should be displayed too. Check the activity of Edit button and push it. Verify the Edit task page is opened. Make changes in fields and push the Edit button. The changes should be saved.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>

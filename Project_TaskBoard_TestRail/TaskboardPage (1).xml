@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S4</id>
+	<name>Task Board Page</name>
+	<description>Display tasks organized by boards in a grid layout</description>
+	<sections>
+		<section>
+		<name>Test Cases</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C16</id>
+				<title>Verify the Task Board button from side menu</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references>TAS-8</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Open the app.
+Click the Task Board button
+ </steps>
+										<expected>Verify the Task Board page is opened.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C17</id>
+				<title>Veryfy the Task Board button from quick access button, located on Home page</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references>TAS-8</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Open the app.
+Click the quick access button Task Board</steps>
+									</custom>
+							</case>
+															<case>
+				<id>C18</id>
+				<title>Ordered board  on Task Board page</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references>TAS-8</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Open the app.
+Click on Task Board button located on Home page</steps>
+										<expected>Verify that boards are ordered as follows: Open, In Progress, Done. Each task should include the task title, a brief description, and action options such as &quot;View&quot; and &quot;Edit.&quot; </expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S5</id>
+	<name>Task Creation</name>
+	<description>Users can create a new task by navigating to the &quot;Create&quot; option from either the side menu, or by clicking on the &quot;New Task&quot; button located on the Home Page for quick access. The task creation form requires the following information: 
+
+• Title: Users must provide a title for the task. 
+
+• Description: Users can optionally provide a description for the task. 
+
+• Board: Users need to select the board where the task will be placed.</description>
+	<sections>
+		<section>
+		<name>Test Cases</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C19</id>
+				<title>Create button form Side menu</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references>TAS-13</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Open the app.
+Click on the Create button situated in Side menu bar</steps>
+										<expected>Verify the Create Task page is opened. The task creation form requires the following information: 
+
+• Title: Users must provide a title for the task. 
+
+• Description: Users can optionally provide a description for the task. 
+
+• Board: Users need to select the board where the task will be placed.
+Note: Task creation should not be allowed without a title. The title field should be validated to ensure it is not empty
+before allowing the task to be created.
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C20</id>
+				<title>&quot;New Task&quot; button located on the Home Page for quick access</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references>TAS-13</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Open the app.
+Click the New Task button.</steps>
+										<expected>Verify the Create Task page is opened. The task creation form requires the following information: 
+
+• Title: Users must provide a title for the task. 
+
+• Description: Users can optionally provide a description for the task. 
+
+• Board: Users need to select the board where the task will be placed.
+Note: Task creation should not be allowed without a title. The title field should be validated to ensure it is not empty
+before allowing the task to be created.
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C21</id>
+				<title>Create task with empty title</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references>TAS-13</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Open the app.
+Click on New task button</steps>
+										<expected>Verify the Create Task page is opened. If the title is empty when we push the Create button should be displayed the following message &quot;Error: Title cannot be empty!&quot;</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C22</id>
+				<title>Fill-in the Task Creation form</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references>TAS-13</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Open the app.
+Click on the New Task button located on the Home Page for quick access.
+Fill-in the the Create Task form
+Click on the Create button</steps>
+										<expected>Verify the Create Task page is opned. The Create Task form should be displayed. Fill-in the Creation Task form and push the Create button. The information given in the fields should be displayed in correct board.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>
